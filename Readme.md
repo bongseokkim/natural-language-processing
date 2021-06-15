@@ -37,6 +37,7 @@
 ## 데이터 수집 
 + reference : https://shlee1990.tistory.com/864
 + R 크롤러를 활용, 디시인사이드의 MBTI별 갤러리별 게시물 3000개 수집 (https://gall.dcinside.com/mgallery/board/lists/?id=estj)
+<img src="https://github.com/bongseokkim/natural-language-processing/blob/main/image/data%ED%98%95%ED%83%9C.PNG"  width="100%">
 
 ## World Cloud 결과
 image repos에 저장이 되어 있습니다.
