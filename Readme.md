@@ -63,14 +63,45 @@ image repos에 저장이 되어 있습니다.
 ( 디시인사이드 갤러리에서 수집한 데이터 자체가 욕설, 정치적 글등 성격과 의미없는 데이터가 대부분이지 않았나 생각합니다.)
 
 ### Embedding layer를 활용한 MLP 분류 모델 
+```{python}
+embedding_dim =100
 
+model = Sequential()
+model.add(Embedding(max_words, embedding_dim, input_length=maxlen))
+model.add(Flatten())
+model.add(Dense(32, activation='relu'))
+model.add(Dense(16, activation='softmax'))
+model.summary()
+```
 training acc는 높아지나 일반화 성능을 전혀 못함..
 
 ### training / validation acc 
+
 
 <img src="https://github.com/bongseokkim/natural-language-processing/blob/main/image/Embedding%20layer.png"  width="40%">
 
 ### LSTM + Embedding layer를 활용한 MLP 분류 모델 
 
-<img src=https://github.com/bongseokkim/natural-language-processing/blob/main/image/LSTM%2BEmbedding%20Layer.png"  width="40%">
+### training/ validation acc 
+
+```{python}
+# build a model
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Embedding, Flatten, Dense, LSTM
+
+embedding_dim = 500
+
+model_LSTM = Sequential()
+model_LSTM.add(Embedding(max_words, embedding_dim, input_length=maxlen))
+model_LSTM.add(LSTM(64,  return_sequences=True))
+model_LSTM.add(LSTM(64,return_sequences=True))
+model_LSTM.add(LSTM(64,return_sequences=True))
+model_LSTM.add(Flatten())
+model_LSTM.add(Dense(32, activation='relu'))
+model_LSTM.add(Dense(16, activation='softmax'))
+model_LSTM.summary()
+
+```
+
+<img src="https://github.com/bongseokkim/natural-language-processing/blob/main/image/LSTM%2BEmbedding%20Layer.png"  width="40%">
 
