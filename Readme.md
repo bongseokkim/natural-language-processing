@@ -55,4 +55,22 @@ image repos에 저장이 되어 있습니다.
 <img src="https://github.com/bongseokkim/natural-language-processing/blob/main/image/ESTP.png"  width="40%">
 
 
+## 분류 모형 만들기 
+(pytorch로 처음 모델링 하려 했으나, colab의 cpuda gpu 문제가 계속 발생해 keras로 바꿨습니다.)
+
+결과는 보시는 바와 같이 대실패 입니다
+
+( 디시인사이드 갤러리에서 수집한 데이터 자체가 욕설, 정치적 글등 성격과 의미없는 데이터가 대부분이지 않았나 생각합니다.)
+
+### Embedding layer를 활용한 MLP 분류 모델 
+
+training acc는 높아지나 일반화 성능을 전혀 못함..
+
+### training / validation acc 
+
+<img src="https://github.com/bongseokkim/natural-language-processing/blob/main/image/Embedding%20layer.png"  width="40%">
+
+### LSTM + Embedding layer를 활용한 MLP 분류 모델 
+
+<img src=https://github.com/bongseokkim/natural-language-processing/blob/main/image/LSTM%2BEmbedding%20Layer.png"  width="40%">
 
