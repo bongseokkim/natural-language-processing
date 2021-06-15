@@ -13,7 +13,8 @@
  + ML을 활요한 MBTI 분류
  + Kobert를 활용한 MBTI 분류
 
-#### 프로젝트 소개
+### 프로젝트 소개
+
 ### Example Sample image (수집한 전체데이터에 대한 word cloud 결과)
 <img src="https://github.com/bongseokkim/natural-language-processing/blob/main/image/total_personlity.png"  width="40%">
 
@@ -38,3 +39,20 @@
 + R 크롤러를 활용, 디시인사이드의 MBTI별 갤러리별 게시물 3000개 수집 (https://gall.dcinside.com/mgallery/board/lists/?id=estj)
 
 ## World Cloud 결과
+image repos에 저장이 되어 있습니다.
+
+몇개만 확인해 보겠습니다
+
+### ESTJ 
+<img src="https://github.com/bongseokkim/natural-language-processing/blob/main/image/ESTJ.png"  width="40%">
+
+
+### INTJ 
+<img src="https://github.com/bongseokkim/natural-language-processing/blob/main/image/INTJ.png"  width="40%">
+
+
+### ESTP 
+<img src="https://github.com/bongseokkim/natural-language-processing/blob/main/image/ESTP.png"  width="40%">
+
+
+
