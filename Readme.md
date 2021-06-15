@@ -106,3 +106,8 @@ model_LSTM.summary()
 
 <img src="https://github.com/bongseokkim/natural-language-processing/blob/main/image/LSTM%2BEmbedding%20Layer.png"  width="40%">
 
+### Try Kobert but failed 
+GPU 할당과 Colab resource 제한으로 학습을 수행하지 못했습니다.
+
+reference source code : SKT brain KoBert 
+https://github.com/aeddung/ML-DL/blob/main/koBert_multiclassification.py
